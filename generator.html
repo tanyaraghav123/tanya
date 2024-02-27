@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+<main>
+    <div class="generator">
+        <h1> Password Generator</h1>
+        <lable class="password-wrap">
+            <input
+             type="text"
+            id="password" 
+             readonly
+            placeholder="Generate a password">
+            <span class="material-symbols-outlined" id="copy">content_copy</span>
+        </lable>
+
+        <lable>
+            <span> Password Length:</span>
+             <input type="number" id="length" value="16" />
+        </lable>
+
+        <lable>
+            <span>Include Uppercase Letters:</span>
+            <input type="checkbox" id="Uppercase" checked />
+        </lable>
+
+        <lable>
+            <span>Include Lowercase Letters:</span>
+            <input type="checkbox" id="Lowercase" checked />
+        </lable>
+
+        <lable>
+            <span> Include Numbers:</span>
+            <input type="checkbox" id="numbers" checked />
+        </lable>
+
+        <lable>
+            <span> Include Symbols:</span>
+            <input type="checkbox" id="Symbols" checked />
+        </lable>
+
+        <button type="submit" id="generate">Generate Password</button>
+    </div>
+</main>
+
+    <script src="javascript.js"></script>
+</body>
+</html> 
